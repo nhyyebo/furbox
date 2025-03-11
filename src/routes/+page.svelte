@@ -2,8 +2,6 @@
 	import NeonText from '$lib/components/NeonText.svelte';
 	import NeonButton from '$lib/components/NeonButton.svelte';
 	import NeonAnnouncement from '$lib/components/NeonAnnouncement.svelte';
-
-	let showAnnouncement = $state(false);
 </script>
 
 <svelte:head>
@@ -49,6 +47,10 @@
 			</p>
 		</NeonAnnouncement>
 
+		<a href="/gallery">
+			<NeonButton class="w-full">Catland</NeonButton>
+		</a>
+
 		<NeonAnnouncement buttonText="! Cat Torrent !" announcementHeading="Premium Content">
 			<p class="mt-4 text-base md:text-lg lg:text-xl">Download awesome cat content!</p>
 
@@ -57,7 +59,7 @@
 					<NeonButton class="w-full">Download Torrent</NeonButton>
 				</a>
 				<a
-					href="https://drive.google.com/uc?export=download&id=1SC2753Z_te-jUKb_iczcJl5hbnhx6HdJ"
+					href="https://download.furbox.app/api/shares/awesome-cat/files/456e06b2-6f14-462d-829c-d73bb366523d"
 					target="_blank"
 				>
 					<NeonButton class="w-full">Direct Download</NeonButton>
